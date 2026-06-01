@@ -158,3 +158,56 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Media query voor mobiele apparaten (responsive design) */
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+    background: #f5f5dc; /* Eenvoudige achtergrond voor mobiel */
+  }
+
+  nav {
+    text-align: center;
+    padding: 15px 10px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+
+  .home-content {
+    flex-direction: column-reverse; /* Foto boven de tekst op mobiel */
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  .foto-rechts img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about {
+    width: 95%;
+    padding: 10px;
+    padding-bottom: 80px; /* Ruimte voor de fixed footer */
+  }
+
+  .skills {
+    width: 90%;
+    margin: 20px auto;
+    padding-bottom: 80px; /* Ruimte voor de fixed footer */
+  }
+
+  .work {
+    padding-bottom: 80px; /* Ruimte voor de fixed footer */
+  }
+
+  .contact {
+    min-height: auto;
+    padding-bottom: 80px; /* Ruimte voor de fixed footer */
+  }
+}
